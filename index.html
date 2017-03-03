@@ -17,6 +17,20 @@
 	<![endif]-->
 
 </head>
+<script>
+$(document).ready(function() {
+	var pageHeight = parseInt($(window).height());
+	var imageHeight = parseInt($('#logo').height());
+
+	var calculatedHeight = parseInt((pageHeight - imageHeight) * .92);
+
+	var textHeight = calculatedHeight.toString() + 'px';
+
+	$('#textContent').css({"height": textHeight, 'overflow-y': 'auto'})
+	console.log(textHeight);
+});
+
+</script>
 
 <body>
 	<div id="wrapper">
@@ -46,18 +60,4 @@
 		</div>
 	</div>
 </body>
-<script>
-$(document).ready(function() {
-	var pageHeight = parseInt($(window).height());
-	var imageHeight = parseInt($('#logo').height());
-
-	var calculatedHeight = parseInt((pageHeight - imageHeight) * .92);
-
-	var textHeight = calculatedHeight.toString() + 'px';
-
-	$('#textContent').css({"height": textHeight, 'overflow-y': 'auto'})
-	console.log(textHeight);
-});
-
-</script>
 </html>
