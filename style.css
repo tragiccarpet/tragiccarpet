@@ -12,16 +12,32 @@ p {
 	text-align: justify;
 }
 
+a:link {
+	color: #326891;
+}
+
+a:visited {
+	color: #326891;
+}
+
 h1 { 
 	font-size: 200%; 
 	font-weight: 400;
-	border-bottom: 1px solid;
-	margin-bottom: 1%;
+	line-height: 100%;
+
 }
 
 h2 { 
 	font-size: 150%; 
 	font-weight: 200;
+}
+
+h3 { 
+	font-size: 130%; 
+	font-weight: 400;
+	border-bottom: 1px solid;
+	margin-bottom: 1%;
+	padding-bottom: 1%;
 }
 
 #wrapper {
