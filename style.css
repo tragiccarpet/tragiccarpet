@@ -1,0 +1,61 @@
+* { margin: 0; 
+	padding: 0; 
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+}
+
+p { 
+	font-size: 100%; 
+	text-align: justify;
+}
+
+h1 { 
+	font-size: 200%; 
+	font-weight: 400;
+	border-bottom: 1px solid;
+	margin-bottom: 1%;
+}
+
+h2 { 
+	font-size: 150%; 
+	font-weight: 200;
+}
+
+#wrapper {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#logo {
+	display: block;
+
+	width: 40%;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#textContent {
+	display: block;
+
+	width: 37%;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 1%;
+
+}
+
+@media only screen and (max-device-width: 768px) {
+	p { font-size: 150%; }
+	h1 { font-size: 175%; }
+
+	#wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
