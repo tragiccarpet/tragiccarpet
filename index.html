@@ -2,18 +2,19 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+	<meta charset="utf-8">
 
-  <title>Tragic Carpet</title>
-  <meta name="description" content="Tragic Carpet - Visual Theatre Co.">
-  <link rel="stylesheet" href="style.css">
+	<title>Tragic Carpet</title>
+	<meta name="description" content="Tragic Carpet - Visual Theatre Co.">
+	<link rel="stylesheet" href="style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,700" rel="stylesheet">
 
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
 
 </head>
 
@@ -24,13 +25,36 @@
 			<h2>Tragic Carpet Visual Theatre presents</h2>
 			<h1>RENDITION</h1>
 			<p>
-				<i>“Extraordinary rendition is the transfer—without legal process—of a detainee to the custody of a foreign government for purposes of detention and interrogation”</i> 
+				Between 2001 and 2009 over 130 individuals have been held and tortured as part of the CIA’s detention and interrogation programme.
 			</p>
 			<br>
 			<p>
-			Between 2001 and 2009 over 130 individuals have been held and tortured as part of the CIA’s detention and interrogation programme.
+				<b>RENDITION</b> uses puppetry, soundscapes, object, shadow and visual theatre to explore the collusion between the CIA and the British Government; the juxtaposition between extreme vulnerability and absolute power; and the story of one man’s experience as the first suspect to be taken into the CIA detention programme.
+			</p>
+						<p>
+				<b>RENDITION</b> uses puppetry, soundscapes, object, shadow and visual theatre to explore the collusion between the CIA and the British Government; the juxtaposition between extreme vulnerability and absolute power; and the story of one man’s experience as the first suspect to be taken into the CIA detention programme.
+			</p>
+						<p>
+				<b>RENDITION</b> uses puppetry, soundscapes, object, shadow and visual theatre to explore the collusion between the CIA and the British Government; the juxtaposition between extreme vulnerability and absolute power; and the story of one man’s experience as the first suspect to be taken into the CIA detention programme.
+			</p>
+						<p>
+				<b>RENDITION</b> uses puppetry, soundscapes, object, shadow and visual theatre to explore the collusion between the CIA and the British Government; the juxtaposition between extreme vulnerability and absolute power; and the story of one man’s experience as the first suspect to be taken into the CIA detention programme.
 			</p>
 		</div>
 	</div>
 </body>
+<script>
+$(document).ready(function() {
+	var pageHeight = parseInt($(window).height());
+	var imageHeight = parseInt($('#logo').height());
+
+	var calculatedHeight = parseInt((pageHeight - imageHeight) * .92);
+
+	var textHeight = calculatedHeight.toString() + 'px';
+
+	$('#textContent').css({"height": textHeight, 'overflow-y': 'auto'})
+	console.log(textHeight);
+});
+
+</script>
 </html>

@@ -25,14 +25,16 @@ h2 {
 }
 
 #wrapper {
-	width: 60%;
+	max-height: 100%;
+	width: 23%;
 	margin: 0 auto;
+
 }
 
 #logo {
 	display: block;
 
-	width: 40%;
+	width: 100%;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -40,14 +42,33 @@ h2 {
 
 #textContent {
 	display: block;
+	
+	width: 93%;
 
-	width: 37%;
+	overflow-x: hidden;
 
 	margin-left: auto;
 	margin-right: auto;
 
-	margin-top: 1%;
+	margin-top: 2%;
+	padding-right: 5px;
 
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-device-width: 768px) {
