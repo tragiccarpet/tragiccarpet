@@ -43,7 +43,8 @@ h2 {
 #textContent {
 	display: block;
 	
-	width: 93%;
+	width: 90%;
+	padding-left: 4%;
 
 	overflow-x: hidden;
 
@@ -57,8 +58,7 @@ h2 {
 
 ::-webkit-scrollbar
 {
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+  width: 6px;  /* for vertical scrollbars */
 }
 
 ::-webkit-scrollbar-track
@@ -68,7 +68,7 @@ h2 {
 
 ::-webkit-scrollbar-thumb
 {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-device-width: 768px) {
