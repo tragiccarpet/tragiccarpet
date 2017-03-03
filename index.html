@@ -17,7 +17,17 @@
 	<![endif]-->
 	<script>
 		$(window).on('load', function(){
-			console.log('function fired')
+			var pageHeight = parseInt($(window).height());
+			var imageHeight = parseInt($('#logo').height());
+
+			var calculatedHeight = parseInt((pageHeight - imageHeight) * .92);
+
+			var textHeight = calculatedHeight.toString() + 'px';
+
+			$('#textContent').css({"height": textHeight, 'overflow-y': 'auto'})
+		});
+
+		$(window).resize(function(){
 			var pageHeight = parseInt($(window).height());
 			var imageHeight = parseInt($('#logo').height());
 
